@@ -1,10 +1,10 @@
 import {StyleSheet} from 'react-native';
-import {fonts} from '../../styles/base';
+import {container, fonts} from '../../styles/base';
 
 export const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    margin: 20,
+    ...container,
+    padding: 20,
   },
   row: {
     display: 'flex',
@@ -16,9 +16,9 @@ export const styles = StyleSheet.create({
   },
   iconContainer: {
     padding: 10,
-    backgroundColor: '#ddd',
     borderRadius: 5,
     marginRight: 15,
+    backgroundColor: '#ddd',
   },
   textInput: {
     ...fonts.sm,

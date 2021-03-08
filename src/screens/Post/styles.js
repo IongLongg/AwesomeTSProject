@@ -1,9 +1,9 @@
 import {StyleSheet} from 'react-native';
-import {fonts} from '../../styles/base';
+import {container, fonts} from '../../styles/base';
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    ...container,
     flexDirection: 'column',
   },
   reviewText: {

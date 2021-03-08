@@ -20,22 +20,30 @@ const Router = () => {
             headerShown: false,
           }}
         />
-        {/* <Stack.Screen
+        <Stack.Screen
           name="Search screen"
           component={SearchResultsScreen}
+          options={{
+            headerTitle: 'Search your destination',
+            headerTitleAlign: 'center',
+          }}
+        />
+        <Stack.Screen
+          name="Guests filter screen"
+          component={GuestsFilterScreen}
           options={{
             headerTitle: 'Guests screen',
             headerTitleAlign: 'center',
           }}
         />
         <Stack.Screen
-          name="Guests Filter screen"
-          component={GuestsFilterScreen}
+          name="Post results screen"
+          component={PostScreen}
           options={{
-            headerTitle: 'Guests screen',
+            headerTitle: 'Post results screen',
             headerTitleAlign: 'center',
           }}
-        /> */}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

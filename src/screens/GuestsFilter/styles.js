@@ -1,11 +1,12 @@
 import {StyleSheet} from 'react-native';
-import {fonts} from '../../styles/base';
+import {colors, container, fonts} from '../../styles/base';
 
 export const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    ...container,
     paddingHorizontal: 30,
     paddingVertical: 30,
+    justifyContent: 'space-between',
   },
   headerContainer: {
     display: 'flex',
@@ -44,5 +45,11 @@ export const styles = StyleSheet.create({
     height: 35,
     alignItems: 'center',
     marginHorizontal: 15,
+  },
+  searchButton: {
+    alignItems: 'center',
+    backgroundColor: colors.pinky,
+    paddingVertical: 5,
+    borderRadius: 10,
   },
 });

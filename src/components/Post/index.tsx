@@ -6,6 +6,7 @@ import styles from './styles';
 const Post: React.FC<any> = ({post}) => {
   return (
     <Pressable
+      onPress={() => console.log('asdfasd')}
       style={({pressed}) => [
         styles.post,
         {

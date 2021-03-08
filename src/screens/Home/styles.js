@@ -1,10 +1,10 @@
-import {fonts} from '../../styles/base';
+import {container, fonts} from '../../styles/base';
 
 const {StyleSheet} = require('react-native');
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    ...container,
   },
   bgImage: {
     flex: 1,

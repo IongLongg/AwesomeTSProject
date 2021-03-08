@@ -1,9 +1,12 @@
 import React from 'react';
 import {ScrollView, Text} from 'react-native';
+
 import Post from '../../components/Post';
+import posts from '../../../assets/data/feed';
+
 import styles from './styles';
 
-const PostScreen: React.FC<any> = ({posts}) => {
+const PostScreen: React.FC<any> = () => {
   return (
     <ScrollView style={styles.container}>
       <Text style={styles.reviewText}>
